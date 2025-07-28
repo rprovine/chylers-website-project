@@ -16,7 +16,7 @@ export default function AboutPage() {
       <section className="relative h-[400px] overflow-hidden">
         <Image
           src={PRODUCT_IMAGES.hero}
-          alt="Hawaii landscape"
+          alt="Chyler's Hawaiian Beef Chips Products"
           fill
           className="object-cover"
         />
@@ -56,7 +56,7 @@ export default function AboutPage() {
             <div className="relative h-[400px]">
               <Image
                 src={PRODUCT_IMAGES.varietyPack.primary}
-                alt="Family photo"
+                alt="Chyler's Beef Chips Variety Pack"
                 fill
                 className="object-cover rounded-lg"
               />
@@ -112,6 +112,63 @@ export default function AboutPage() {
                 We never compromise on quality, using only premium ingredients to create 
                 the perfect crispy texture and flavor.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Gallery */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Product Line</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
+                <Image
+                  src={PRODUCT_IMAGES.original.primary}
+                  alt="Original Hawaiian Beef Chips"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform"
+                />
+              </div>
+              <h3 className="font-semibold">Original</h3>
+              <p className="text-sm text-muted-foreground">Our classic flavor</p>
+            </div>
+            <div className="text-center">
+              <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
+                <Image
+                  src={PRODUCT_IMAGES.crackedPepper.primary}
+                  alt="Cracked Pepper Hawaiian Beef Chips"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform"
+                />
+              </div>
+              <h3 className="font-semibold">Cracked Pepper</h3>
+              <p className="text-sm text-muted-foreground">Bold pepper taste</p>
+            </div>
+            <div className="text-center">
+              <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
+                <Image
+                  src={PRODUCT_IMAGES.spicy.primary}
+                  alt="Spicy Hawaiian Beef Chips"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform"
+                />
+              </div>
+              <h3 className="font-semibold">Spicy</h3>
+              <p className="text-sm text-muted-foreground">For heat lovers</p>
+            </div>
+            <div className="text-center">
+              <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
+                <Image
+                  src={PRODUCT_IMAGES.roastedGarlic.primary}
+                  alt="Roasted Garlic Hawaiian Beef Chips"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform"
+                />
+              </div>
+              <h3 className="font-semibold">Roasted Garlic</h3>
+              <p className="text-sm text-muted-foreground">Award winning flavor</p>
             </div>
           </div>
         </div>

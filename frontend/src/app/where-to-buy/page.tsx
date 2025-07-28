@@ -1,9 +1,11 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { MapPin, ShoppingBag, Clock, Phone } from 'lucide-react'
 import { BUSINESS_INFO, SITE_CONFIG } from '@/lib/constants'
+import { PRODUCT_IMAGES } from '@/lib/product-images'
 
 export const metadata: Metadata = {
   title: 'Where to Buy',
@@ -13,9 +15,17 @@ export const metadata: Metadata = {
 export default function WhereToBuyPage() {
   return (
     <div className="min-h-screen">
-      {/* Page Header */}
-      <section className="bg-gray-50 py-12">
-        <div className="container mx-auto px-4">
+      {/* Page Header with Product Image */}
+      <section className="relative bg-gray-50 py-12 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <Image
+            src={PRODUCT_IMAGES.collection}
+            alt="Chyler's Hawaiian Beef Chips Collection"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Where to Buy</h1>
           <p className="text-lg text-muted-foreground">
             Get your favorite Hawaiian beef chips directly from us or through our retail partners
@@ -152,6 +162,26 @@ export default function WhereToBuyPage() {
               <p className="text-muted-foreground">
                 Interactive map would go here showing {BUSINESS_INFO.address}
               </p>
+            </div>
+          </div>
+
+          {/* Product Display */}
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold mb-6 text-center">Available Products</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {PRODUCT_IMAGES.allProducts.map((image, index) => {
+                const flavors = ['Original', 'Cracked Pepper', 'Spicy', 'Roasted Garlic']
+                return (
+                  <div key={index} className="relative aspect-square overflow-hidden rounded-lg shadow-md">
+                    <Image
+                      src={image}
+                      alt={`${flavors[index]} Hawaiian Beef Chips`}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>

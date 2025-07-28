@@ -69,9 +69,9 @@ export default async function HomePage() {
         <div className="absolute inset-0">
           <Image
             src={PRODUCT_IMAGES.hero}
-            alt="Hawaiian landscape"
+            alt="Chyler's Hawaiian Beef Chips - Three Flavors"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
@@ -125,6 +125,37 @@ export default async function HomePage() {
               <span className="font-semibold">Made in Hawaii</span>
               <span className="text-sm text-muted-foreground">With Aloha certification</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Showcase */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Four Amazing Flavors</h2>
+            <p className="text-lg text-muted-foreground">
+              Each flavor carefully crafted to deliver the perfect crispy crunch
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            {PRODUCT_IMAGES.allProducts.map((image, index) => {
+              const flavors = ['Original', 'Cracked Pepper', 'Spicy', 'Roasted Garlic']
+              return (
+                <div key={index} className="relative group">
+                  <div className="aspect-square overflow-hidden rounded-lg">
+                    <Image
+                      src={image}
+                      alt={`${flavors[index]} Hawaiian Beef Chips`}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <p className="mt-2 text-center font-medium">{flavors[index]}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -186,8 +217,8 @@ export default async function HomePage() {
             </div>
             <div className="relative h-[400px]">
               <Image
-                src={PRODUCT_IMAGES.collection}
-                alt="Chyler's story"
+                src={PRODUCT_IMAGES.varietyPack.primary}
+                alt="Chyler's Beef Chips Variety Pack - All Four Flavors"
                 fill
                 className="object-cover rounded-lg"
               />

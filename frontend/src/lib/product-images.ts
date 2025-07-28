@@ -23,6 +23,22 @@ export const PRODUCT_IMAGES = {
   },
   varietyPack: {
     primary: 'https://chylers.com/cdn/shop/files/chylers-beef-chips-variety-pack-4-bags-905870.jpg',
+  },
+  
+  // Array of all product images for galleries
+  allProducts: [
+    'https://chylers.com/cdn/shop/files/hawaiian-beef-chips-original-199172.jpg',
+    'https://chylers.com/cdn/shop/files/hawaiian-beef-chips-cracked-pepper-271267.jpg',
+    'https://chylers.com/cdn/shop/files/hawaiian-beef-chips-spicy-146525.jpg',
+    'https://chylers.com/cdn/shop/files/hawaiian-beef-chips-roasted-garlic-756083.jpg',
+  ],
+  
+  // Secondary/lifestyle images
+  lifestyle: {
+    original: 'https://chylers.com/cdn/shop/files/hawaiian-beef-chips-original-757042.jpg',
+    crackedPepper: 'https://chylers.com/cdn/shop/files/hawaiian-beef-chips-cracked-pepper-647024.jpg',
+    spicy: 'https://chylers.com/cdn/shop/files/hawaiian-beef-chips-spicy-907643.jpg',
+    roastedGarlic: 'https://chylers.com/cdn/shop/files/hawaiian-beef-chips-original-with-roasted-garlic-711636.jpg',
   }
 }
 
