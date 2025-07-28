@@ -16,7 +16,7 @@ export function CartItemCard({ item }: CartItemCardProps) {
 
   const handleQuantityChange = (quantity: number) => {
     if (quantity > 0) {
-      updateItem(item.id, quantity)
+      updateItem(String(item.id), quantity)
     }
   }
 
@@ -74,7 +74,7 @@ export function CartItemCard({ item }: CartItemCardProps) {
             variant="ghost"
             size="icon"
             className="h-8 w-8 text-destructive"
-            onClick={() => removeItem(item.id)}
+            onClick={() => removeItem(String(item.id))}
             disabled={isLoading}
           >
             <Trash2 className="h-4 w-4" />

@@ -2,6 +2,22 @@
 
 Full-stack e-commerce website for Chyler's Hawaiian Beef Chips, a premium Hawaiian snack company established in 2004.
 
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/rprovine/chylers-website-project.git
+cd chylers-website-project
+
+# Start development environment
+./start-dev.sh
+```
+
+Visit:
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:8000
+- API Docs: http://localhost:8000/docs
+
 ## Project Overview
 
 This repository contains the complete website implementation for Chyler's Hawaiian Beef Chips, featuring:
@@ -20,23 +36,24 @@ This repository contains the complete website implementation for Chyler's Hawaii
 - PostgreSQL database with SQLAlchemy
 - Shopify API integration
 - JWT authentication
-- Redis caching
+- Redis caching (optional)
 - Docker deployment ready
 
-### Frontend (Coming Soon)
+### Frontend (Next.js 14)
 - Next.js 14 with TypeScript
-- Tailwind CSS for styling
-- Shopify Storefront API
-- Server-side rendering
+- Tailwind CSS with shadcn/ui
+- Zustand state management
+- React Query for data fetching
+- Responsive design
 
 ## Repository Structure
 
 ```
 chylers-website-project/
 ├── backend/          # FastAPI backend with Shopify integration
-├── frontend/         # Next.js frontend (coming soon)
-├── docs/            # Documentation
-└── scripts/         # Deployment and utility scripts
+├── frontend/         # Next.js frontend
+├── start-dev.sh      # Development start script
+└── README.md         # This file
 ```
 
 ## Business Information

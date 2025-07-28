@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { ProductCard } from '@/components/products/product-card'
-import { PRODUCT_CONFIG } from '@/lib/constants'
+import { productsApi } from '@/lib/api/client'
 
 export const metadata: Metadata = {
   title: 'Shop Beef Chips',
@@ -8,50 +8,14 @@ export const metadata: Metadata = {
 }
 
 async function getProducts() {
-  // TODO: Replace with actual API call
-  const flavors = PRODUCT_CONFIG.flavors
-  
-  return flavors.map((flavor, index) => ({
-    id: String(index + 1),
-    title: `Chyler's ${flavor.name} Beef Chips`,
-    handle: `${flavor.slug}-beef-chips`,
-    vendor: "Chyler's Hawaiian Beef Chips",
-    product_type: 'Beef Chips',
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
-    tags: [flavor.slug, flavor.badge?.toLowerCase().replace(' ', '-') || ''].filter(Boolean),
-    variants: PRODUCT_CONFIG.packSizes.map((size, idx) => ({
-      id: `${index + 1}-${idx + 1}`,
-      product_id: String(index + 1),
-      title: size.name,
-      price: String((size.basePrice || 13.99) * size.quantity * (1 - (size.discount || 0))),
-      sku: `${flavor.id.toUpperCase()}-${size.quantity}`,
-      position: idx + 1,
-      inventory_policy: 'deny',
-      option1: size.name,
-      available: true,
-      requires_shipping: true,
-      taxable: true,
-      weight_unit: 'oz',
-    })),
-    images: [{
-      id: String(index + 1),
-      src: `https://images.unsplash.com/photo-${index % 2 === 0 ? '1629385969100-bff45d848476' : '1558618666-fcd25c85cd64'}?w=800`,
-      alt: `${flavor.name} Beef Chips`,
-      position: 1,
-    }],
-    options: [{
-      id: '1',
-      name: 'Size',
-      position: 1,
-      values: PRODUCT_CONFIG.packSizes.map(s => s.name),
-    }],
-    flavor: flavor.name,
-    pack_sizes: PRODUCT_CONFIG.packSizes.map(s => s.name),
-    nutrition_info: PRODUCT_CONFIG.nutrition,
-    is_award_winning: flavor.badge === 'Award Winning',
-    is_bestseller: flavor.id === 'original',
-  }))
+  try {
+    const products = await productsApi.getAll()
+    return products
+  } catch (error) {
+    console.error('Failed to fetch products:', error)
+    // Return empty array if API fails
+    return []
+  }
 }
 
 export default async function ShopPage() {
