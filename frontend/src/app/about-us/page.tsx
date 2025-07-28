@@ -331,9 +331,9 @@ export default function AboutPage() {
             <div className="space-y-12 relative">
               {/* 2004 - The Beginning */}
               <div className="flex flex-col lg:flex-row gap-8 items-center">
-                <div className="flex-1 lg:text-right">
-                  <div className="bg-white rounded-xl shadow-md p-6 relative">
-                    <div className="absolute -top-3 -right-3 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg">
+                <div className="flex-1 lg:text-right lg:pr-8">
+                  <div className="bg-white rounded-xl shadow-md p-6 pt-12 relative">
+                    <div className="absolute -top-6 lg:-right-6 left-1/2 lg:left-auto transform -translate-x-1/2 lg:translate-x-0 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg z-10">
                       2004
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-primary">The Happy Accident</h3>
@@ -348,8 +348,14 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="lg:flex-1 order-first lg:order-last">
-                  <div className="w-24 h-24 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-4xl">👨‍👩‍👧</span>
+                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg">
+                    <Image
+                      src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop"
+                      alt="Family cooking together"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -357,13 +363,19 @@ export default function AboutPage() {
               {/* 2005 - First Sales */}
               <div className="flex flex-col lg:flex-row gap-8 items-center">
                 <div className="lg:flex-1">
-                  <div className="w-24 h-24 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-4xl">🏪</span>
+                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg">
+                    <Image
+                      src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=400&h=400&fit=crop"
+                      alt="Local farmers market"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
-                <div className="flex-1">
-                  <div className="bg-white rounded-xl shadow-md p-6 relative">
-                    <div className="absolute -top-3 -left-3 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg">
+                <div className="flex-1 lg:pl-8">
+                  <div className="bg-white rounded-xl shadow-md p-6 pt-12 relative">
+                    <div className="absolute -top-6 lg:-left-6 left-1/2 lg:left-auto transform -translate-x-1/2 lg:translate-x-0 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg z-10">
                       2005
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-primary">First Local Success</h3>
@@ -381,9 +393,9 @@ export default function AboutPage() {
 
               {/* 2008 - Award Recognition */}
               <div className="flex flex-col lg:flex-row gap-8 items-center">
-                <div className="flex-1 lg:text-right">
-                  <div className="bg-white rounded-xl shadow-md p-6 relative">
-                    <div className="absolute -top-3 -right-3 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg">
+                <div className="flex-1 lg:text-right lg:pr-8">
+                  <div className="bg-white rounded-xl shadow-md p-6 pt-12 relative">
+                    <div className="absolute -top-6 lg:-right-6 left-1/2 lg:left-auto transform -translate-x-1/2 lg:translate-x-0 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg z-10">
                       2008
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-primary">Award-Winning Excellence</h3>
@@ -398,8 +410,14 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="lg:flex-1 order-first lg:order-last">
-                  <div className="w-24 h-24 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-4xl">🏆</span>
+                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg">
+                    <Image
+                      src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=400&h=400&fit=crop"
+                      alt="Award ceremony trophy"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -407,13 +425,19 @@ export default function AboutPage() {
               {/* 2010 - New Facility */}
               <div className="flex flex-col lg:flex-row gap-8 items-center">
                 <div className="lg:flex-1">
-                  <div className="w-24 h-24 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-4xl">🏭</span>
+                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg">
+                    <Image
+                      src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=400&h=400&fit=crop"
+                      alt="Modern food facility"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
-                <div className="flex-1">
-                  <div className="bg-white rounded-xl shadow-md p-6 relative">
-                    <div className="absolute -top-3 -left-3 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg">
+                <div className="flex-1 lg:pl-8">
+                  <div className="bg-white rounded-xl shadow-md p-6 pt-12 relative">
+                    <div className="absolute -top-6 lg:-left-6 left-1/2 lg:left-auto transform -translate-x-1/2 lg:translate-x-0 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg z-10">
                       2010
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-primary">Growing Our Roots</h3>
@@ -431,9 +455,9 @@ export default function AboutPage() {
 
               {/* 2015 - Going Digital */}
               <div className="flex flex-col lg:flex-row gap-8 items-center">
-                <div className="flex-1 lg:text-right">
-                  <div className="bg-white rounded-xl shadow-md p-6 relative">
-                    <div className="absolute -top-3 -right-3 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg">
+                <div className="flex-1 lg:text-right lg:pr-8">
+                  <div className="bg-white rounded-xl shadow-md p-6 pt-12 relative">
+                    <div className="absolute -top-6 lg:-right-6 left-1/2 lg:left-auto transform -translate-x-1/2 lg:translate-x-0 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg z-10">
                       2015
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-primary">Digital Expansion</h3>
@@ -448,8 +472,14 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="lg:flex-1 order-first lg:order-last">
-                  <div className="w-24 h-24 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-4xl">🌐</span>
+                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg">
+                    <Image
+                      src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=400&fit=crop"
+                      alt="E-commerce online shopping"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -457,13 +487,19 @@ export default function AboutPage() {
               {/* 2020 - Pandemic Pivot */}
               <div className="flex flex-col lg:flex-row gap-8 items-center">
                 <div className="lg:flex-1">
-                  <div className="w-24 h-24 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-4xl">💪</span>
+                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg">
+                    <Image
+                      src="https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=400&h=400&fit=crop"
+                      alt="Healthcare workers and community support"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
-                <div className="flex-1">
-                  <div className="bg-white rounded-xl shadow-md p-6 relative">
-                    <div className="absolute -top-3 -left-3 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg">
+                <div className="flex-1 lg:pl-8">
+                  <div className="bg-white rounded-xl shadow-md p-6 pt-12 relative">
+                    <div className="absolute -top-6 lg:-left-6 left-1/2 lg:left-auto transform -translate-x-1/2 lg:translate-x-0 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg z-10">
                       2020
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-primary">Resilience & Innovation</h3>
@@ -481,9 +517,9 @@ export default function AboutPage() {
 
               {/* 2024 - New Chapter */}
               <div className="flex flex-col lg:flex-row gap-8 items-center">
-                <div className="flex-1 lg:text-right">
-                  <div className="bg-white rounded-xl shadow-md p-6 relative">
-                    <div className="absolute -top-3 -right-3 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg">
+                <div className="flex-1 lg:text-right lg:pr-8">
+                  <div className="bg-white rounded-xl shadow-md p-6 pt-12 relative">
+                    <div className="absolute -top-6 lg:-right-6 left-1/2 lg:left-auto transform -translate-x-1/2 lg:translate-x-0 bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg z-10">
                       2024
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-primary">New Home, Same Heart</h3>
@@ -498,8 +534,14 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="lg:flex-1 order-first lg:order-last">
-                  <div className="w-24 h-24 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-4xl">🚀</span>
+                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg">
+                    <Image
+                      src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=400&h=400&fit=crop"
+                      alt="Modern production facility"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
