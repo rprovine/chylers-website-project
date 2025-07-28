@@ -314,32 +314,32 @@ export default function HomePage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Partners</h2>
-          <div className="grid grid-cols-3 md:grid-cols-3 gap-8 items-center max-w-3xl mx-auto">
+          <div className="grid grid-cols-3 md:grid-cols-3 gap-8 lg:gap-12 items-center max-w-4xl mx-auto">
             <div className="flex justify-center">
               <Image
                 src="https://chylers.com/cdn/shop/files/mihf-logo-bw.png?v=1724561775&width=550"
                 alt="MIHF Partner"
-                width={200}
-                height={100}
-                className="h-24 w-auto grayscale hover:grayscale-0 transition-all"
+                width={250}
+                height={125}
+                className="h-20 sm:h-28 md:h-32 w-auto grayscale hover:grayscale-0 transition-all"
               />
             </div>
             <div className="flex justify-center">
               <Image
                 src="https://chylers.com/cdn/shop/files/SSE_Logo_FINAL-bw.png?v=1724562607&width=550"
                 alt="SSE Partner"
-                width={200}
-                height={100}
-                className="h-24 w-auto grayscale hover:grayscale-0 transition-all"
+                width={250}
+                height={125}
+                className="h-20 sm:h-28 md:h-32 w-auto grayscale hover:grayscale-0 transition-all"
               />
             </div>
             <div className="flex justify-center">
               <Image
                 src="https://chylers.com/cdn/shop/files/MIH-logo.jpg?v=1724562658&width=550"
                 alt="MIH Partner"
-                width={200}
-                height={100}
-                className="h-24 w-auto grayscale hover:grayscale-0 transition-all"
+                width={250}
+                height={125}
+                className="h-20 sm:h-28 md:h-32 w-auto grayscale hover:grayscale-0 transition-all"
               />
             </div>
           </div>
