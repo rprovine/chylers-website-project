@@ -45,7 +45,11 @@ export default function WhereToBuyPage() {
                   <div>
                     <h2 className="text-2xl font-bold mb-4">Will-Call Pickup</h2>
                     <p className="text-muted-foreground mb-4">
-                      Hawaii customers can save on shipping by picking up their orders directly from our facility.
+                      Skip the shipping fees and experience true Hawaiian hospitality at our Waipahu 
+                      facility! Will-call pickup is perfect for local customers who want their beef 
+                      chips fresh from our kitchen. Plus, you'll get to meet our friendly team and 
+                      maybe even catch a glimpse of the roasting process in action. Many customers 
+                      tell us the aroma alone makes the trip worthwhile!
                     </p>
                     
                     <div className="space-y-3">

@@ -64,8 +64,13 @@ export default async function ShopPage() {
       <section className="bg-gray-50 py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Shop Beef Chips</h1>
-          <p className="text-lg text-muted-foreground">
-            Premium Hawaiian beef chips in 4 delicious flavors. Made with Aloha since 2004.
+          <p className="text-lg text-muted-foreground max-w-3xl">
+            Discover the perfect snack that satisfies your cravings without the guilt. Our premium 
+            Hawaiian beef chips deliver an irresistible crunch packed with 18g of protein and only 
+            3g of carbs per serving. Choose from four mouthwatering flavors, each handcrafted in 
+            small batches using our time-honored roasting process. Whether you're fueling your 
+            active lifestyle or simply treating yourself to something special, every bite brings 
+            you the authentic taste of Hawaii.
           </p>
         </div>
       </section>
@@ -86,21 +91,27 @@ export default async function ShopPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <h3 className="text-xl font-semibold mb-2">High Protein</h3>
+              <h3 className="text-xl font-semibold mb-2">High Protein Powerhouse</h3>
               <p className="text-muted-foreground">
-                18g of protein per serving to fuel your day
+                With 18g of premium beef protein per serving, our chips deliver more protein 
+                than three eggs! Perfect for post-workout recovery, afternoon energy boosts, 
+                or satisfying those between-meal cravings while supporting your fitness goals.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">Keto Friendly</h3>
+              <h3 className="text-xl font-semibold mb-2">Keto & Paleo Friendly</h3>
               <p className="text-muted-foreground">
-                Only 3g carbs per serving - perfect for low-carb diets
+                Only 3g of carbs and zero sugar per serving make our beef chips the ideal 
+                snack for low-carb lifestyles. Naturally gluten-free with no fillers or 
+                artificial ingredients – just pure, wholesome nutrition that fits your diet.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">Made in Hawaii</h3>
+              <h3 className="text-xl font-semibold mb-2">Made Fresh in Hawaii</h3>
               <p className="text-muted-foreground">
-                Locally produced in Kapolei with authentic island flavor
+                Every batch is handcrafted in our Waipahu facility using traditional methods 
+                passed down through generations. When you order, we make it fresh – ensuring 
+                maximum flavor and that perfect crispy texture in every single bag.
               </p>
             </div>
           </div>

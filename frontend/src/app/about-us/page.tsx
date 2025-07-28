@@ -37,19 +37,33 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold mb-6">Meet Cal & Autumn</h2>
               <p className="text-lg mb-4">
                 Believe it or not, Hawaiian Beef Chips® are all the result of an un-planned 
-                but very fortunate recipe mistake. In 2004, we were trying to make beef jerky 
-                to encourage our daughter to eat more protein, but what came out was something 
-                entirely different.
+                but very fortunate recipe mistake. In 2004, as concerned parents, we were 
+                experimenting in our home kitchen, trying to create a healthier beef jerky 
+                that our daughter Chyler would actually enjoy eating. We wanted to boost 
+                her protein intake without the tough, chewy texture that often turns kids 
+                away from traditional jerky.
               </p>
               <p className="text-lg mb-4">
-                When our family tasted it, their reaction was unanimous: 
+                After countless attempts and one fateful batch that stayed in the oven 
+                just a bit too long, we discovered something magical. The thin slices of 
+                beef had transformed into light, crispy chips with an incredible crunch. 
+                When our family gathered around the kitchen table for the taste test, 
+                their eyes lit up. The unanimous reaction: 
                 <span className="font-semibold italic"> "It's not jerky, it's like a chip!"</span> 
-                We knew we had discovered something special.
+                In that moment, we knew we had stumbled upon something truly special.
+              </p>
+              <p className="text-lg mb-4">
+                What started as a simple desire to nourish our daughter became a passion 
+                for sharing this accidental discovery with the world. We named our company 
+                after Chyler (pronounced Shy-Ler), whose wellbeing inspired this journey 
+                and whose enthusiasm continues to motivate us every day.
               </p>
               <p className="text-lg">
-                Named after our daughter Chyler (pronounced Shy-Ler), every bag of our 
-                Hawaiian Beef Chips carries that same spirit of family, love, and the 
-                aloha that makes Hawaii so special.
+                Today, every bag of Hawaiian Beef Chips carries forward that same spirit 
+                of family, innovation, and the deep-rooted aloha that makes Hawaii so special. 
+                We've grown from our small kitchen to a dedicated facility in Waipahu, but 
+                we still make each batch with the same care and attention as that first 
+                accidental masterpiece.
               </p>
             </div>
             <div className="relative h-[400px]">
@@ -93,8 +107,11 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">100% Premium U.S. Beef</h3>
               <p className="text-muted-foreground">
-                We start with only the finest cuts of 100% premium U.S. beef, 
-                carefully selected for quality and flavor.
+                We partner with trusted American ranchers who share our commitment to quality. 
+                Each cut is hand-selected from premium top round beef, ensuring optimal 
+                marbling and flavor. We never use fillers, preservatives, or artificial 
+                ingredients – just pure, wholesome beef that meets our exacting standards 
+                for texture and taste.
               </p>
             </div>
             <div>
@@ -108,8 +125,11 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Secret Blend of Spices</h3>
               <p className="text-muted-foreground">
-                Each flavor uses our proprietary blend of spices, perfected over 
-                years to create the perfect taste profile.
+                Our signature spice blends are the heart of what makes Chyler's unique. 
+                Developed through years of experimentation and refined by countless taste 
+                tests, each blend perfectly complements the natural beef flavor without 
+                overpowering it. From the subtle warmth of our Original to the bold kick 
+                of our Spicy variety, every recipe is a closely guarded family secret.
               </p>
             </div>
             <div>
@@ -123,8 +143,12 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Slow Oven-Roasted</h3>
               <p className="text-muted-foreground">
-                Our unique slow oven-roasting process creates that perfect crispy, 
-                chip-like texture that sets us apart.
+                This is where the magic happens. Our proprietary slow-roasting process 
+                transforms thin slices of seasoned beef into light, crispy chips. Temperature 
+                and timing are carefully controlled to achieve that distinctive crunch while 
+                locking in all the savory flavors. It's a delicate balance that took years 
+                to perfect – too little time and they're chewy, too much and they're brittle. 
+                We've mastered the sweet spot that delivers consistent perfection in every batch.
               </p>
             </div>
           </div>

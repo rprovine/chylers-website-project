@@ -110,8 +110,10 @@ export default function HomePage() {
               It's Not Jerky,<br />It's Like a Chip!
             </h1>
             <p className="text-xl mb-8">
-              Premium Hawaiian beef chips made with Aloha since 2004. 
-              High protein, keto-friendly, and irresistibly delicious.
+              Experience the revolutionary crunch of Hawaii's original beef chips. Handcrafted 
+              in small batches with 100% premium U.S. beef and our secret blend of island spices, 
+              each crispy bite delivers 18g of protein with only 3g of carbs. Perfect for keto 
+              lifestyles, post-workout fuel, or whenever you crave that satisfying crunch.
             </p>
             <div className="flex gap-4">
               <Button size="lg" asChild>
@@ -161,8 +163,11 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Four Amazing Flavors</h2>
-            <p className="text-lg text-muted-foreground">
-              Each flavor carefully crafted to deliver the perfect crispy crunch
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              From our classic Original to our award-winning Roasted Garlic, each flavor is 
+              meticulously crafted using time-honored techniques passed down through generations. 
+              Every batch is slow oven-roasted to achieve that perfect crispy texture that makes 
+              our beef chips impossible to put down. Discover your favorite or try them all!
             </p>
           </div>
           
@@ -283,14 +288,18 @@ export default function HomePage() {
                   Certified Made in Hawaii with Aloha
                 </h2>
                 <p className="text-lg mb-4">
-                  We're proud to be officially certified by the Hawaii Department of Agriculture. 
-                  This certification represents our commitment to supporting local agriculture, 
-                  creating jobs in our community, and sharing the true spirit of aloha with every 
-                  bag of beef chips we make.
+                  We're proud to be officially certified by the Hawaii Department of Agriculture 
+                  as "Made in Hawaii with Aloha." This prestigious certification isn't just a badge – 
+                  it's our promise to maintain the highest standards of quality while supporting our 
+                  local economy. Every purchase helps sustain Hawaiian jobs, supports local suppliers, 
+                  and preserves the authentic flavors of our islands.
                 </p>
                 <p className="text-lg">
-                  When you choose Chyler's, you're not just getting a delicious snack – you're 
-                  supporting a local Hawaiian business that gives back to our island community.
+                  When you choose Chyler's, you're joining a movement that celebrates Hawaiian 
+                  craftsmanship and entrepreneurship. From sourcing to packaging, we prioritize 
+                  local partnerships and sustainable practices. Your support helps us continue 
+                  our mission of sharing the true taste of aloha with the world, one crispy 
+                  bite at a time.
                 </p>
               </div>
               <div className="flex justify-center">
@@ -343,9 +352,13 @@ export default function HomePage() {
               />
             </div>
           </div>
-          <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
-            Proud to partner with organizations that support Hawaiian businesses and promote 
-            local economic growth.
+          <p className="text-center text-muted-foreground mt-8 max-w-3xl mx-auto">
+            We're honored to collaborate with these distinguished organizations that champion 
+            Hawaiian businesses and foster economic growth across our islands. Together, we're 
+            building a stronger, more sustainable Hawaii by promoting local entrepreneurship, 
+            preserving cultural heritage, and creating opportunities for future generations. 
+            These partnerships enable us to reach new markets while staying true to our 
+            island roots and values.
           </p>
         </div>
       </section>
