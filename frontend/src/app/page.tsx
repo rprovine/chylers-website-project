@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { ProductCard } from '@/components/products/product-card'
 import { productsApi } from '@/lib/api/client'
@@ -7,6 +10,7 @@ import { ReviewsSection } from '@/components/reviews/reviews-section'
 import { PRODUCT_IMAGES, getProductImageByFlavor } from '@/lib/product-images'
 import { PRODUCT_CONFIG } from '@/lib/constants'
 import { ArrowRight, Truck, Clock, MapPin, Award } from 'lucide-react'
+import toast from 'react-hot-toast'
 
 async function getFeaturedProducts() {
   try {
@@ -59,8 +63,31 @@ async function getFeaturedProducts() {
   }
 }
 
-export default async function HomePage() {
-  const featuredProducts = await getFeaturedProducts()
+export default function HomePage() {
+  const [featuredProducts, setFeaturedProducts] = useState<any[]>([])
+  const [email, setEmail] = useState('')
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  // Load featured products on mount
+  useEffect(() => {
+    getFeaturedProducts().then(setFeaturedProducts)
+  }, [])
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    
+    try {
+      // TODO: Implement newsletter API call
+      await new Promise(resolve => setTimeout(resolve, 1000)) // Simulate API call
+      toast.success('Welcome to our ohana! Check your email for your 10% off code.')
+      setEmail('')
+    } catch (error) {
+      toast.error('Something went wrong. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
     <>
@@ -279,6 +306,80 @@ export default async function HomePage() {
 
       {/* Reviews Section */}
       <ReviewsSection />
+
+      {/* Partners Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Partners</h2>
+          <div className="grid grid-cols-3 md:grid-cols-3 gap-8 items-center max-w-3xl mx-auto">
+            <div className="flex justify-center">
+              <Image
+                src="https://cdn.shopify.com/s/files/1/0660/6130/4054/files/MIHF_logo.png"
+                alt="MIHF Partner"
+                width={150}
+                height={80}
+                className="h-16 w-auto grayscale hover:grayscale-0 transition-all"
+              />
+            </div>
+            <div className="flex justify-center">
+              <Image
+                src="https://cdn.shopify.com/s/files/1/0660/6130/4054/files/SSE_Logo.png"
+                alt="SSE Partner"
+                width={150}
+                height={80}
+                className="h-16 w-auto grayscale hover:grayscale-0 transition-all"
+              />
+            </div>
+            <div className="flex justify-center">
+              <Image
+                src="https://cdn.shopify.com/s/files/1/0660/6130/4054/files/MIH_logo.png"
+                alt="MIH Partner"
+                width={150}
+                height={80}
+                className="h-16 w-auto grayscale hover:grayscale-0 transition-all"
+              />
+            </div>
+          </div>
+          <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
+            Proud to partner with organizations that support Hawaiian businesses and promote 
+            local economic growth.
+          </p>
+        </div>
+      </section>
+
+      {/* Newsletter Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Stay in the Loop</h2>
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Be the first to know about new flavors, exclusive deals, and special offers. 
+                Join our ohana and get 10% off your first order!
+              </p>
+              
+              <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="flex-1 px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+                  required
+                  disabled={isSubmitting}
+                />
+                <Button type="submit" size="lg" disabled={isSubmitting}>
+                  {isSubmitting ? 'Subscribing...' : 'Subscribe'}
+                </Button>
+              </form>
+              
+              <p className="text-sm text-muted-foreground mt-4">
+                We respect your privacy. Unsubscribe at any time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="py-16 bg-primary text-white">
