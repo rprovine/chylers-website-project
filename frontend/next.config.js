@@ -4,9 +4,6 @@ const nextConfig = {
     domains: ['cdn.shopify.com', 'localhost', 'chylers.com', 'images.unsplash.com'],
     formats: ['image/avif', 'image/webp'],
   },
-  experimental: {
-    optimizeCss: true,
-  },
   async headers() {
     return [
       {

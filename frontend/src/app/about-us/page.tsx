@@ -14,7 +14,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1542259009477-d625272157b7?w=1920"
+          src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1920"
           alt="Hawaii landscape"
           fill
           className="object-cover"
@@ -54,7 +54,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                src="https://images.unsplash.com/photo-1609501676725-7186f017a4b7?w=800"
                 alt="Family photo"
                 fill
                 className="object-cover rounded-lg"

@@ -39,11 +39,13 @@ export const PRODUCT_CONFIG = {
     { id: '15-pack', name: '15 Pack', quantity: 15, discount: 0.15 },
   ],
   nutrition: {
-    servingSize: '1.5 oz',
+    serving_size: '1.5 oz',
     protein: '18g',
     carbs: '3g',
     fat: '5g',
     calories: '120',
+    keto_friendly: true,
+    gluten_free: true,
     features: ['Keto Friendly', 'Low Carb', 'High Protein', 'Gluten Free'],
   },
 }

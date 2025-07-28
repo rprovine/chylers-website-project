@@ -29,10 +29,11 @@ async function getFeaturedProducts() {
         available: true,
         requires_shipping: true,
         taxable: true,
+        weight_unit: 'oz',
       }],
       images: [{
         id: '1',
-        src: 'https://images.unsplash.com/photo-1599749183116-5b3b3f8c2f3f?w=800',
+        src: 'https://images.unsplash.com/photo-1629385969100-bff45d848476?w=800',
         alt: 'Original Beef Chips',
         position: 1,
       }],
@@ -64,10 +65,11 @@ async function getFeaturedProducts() {
         available: true,
         requires_shipping: true,
         taxable: true,
+        weight_unit: 'oz',
       }],
       images: [{
         id: '2',
-        src: 'https://images.unsplash.com/photo-1603048675767-6e79ff5b8fc7?w=800',
+        src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800',
         alt: 'Roasted Garlic Beef Chips',
         position: 1,
       }],
@@ -90,7 +92,7 @@ export default async function HomePage() {
       <section className="relative h-[600px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920"
+            src="https://images.unsplash.com/photo-1606914469633-bd39206ea739?w=1920"
             alt="Hawaiian landscape"
             fill
             className="object-cover"
@@ -208,7 +210,7 @@ export default async function HomePage() {
             </div>
             <div className="relative h-[400px]">
               <Image
-                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800"
+                src="https://images.unsplash.com/photo-1613482184972-f9c1022d0928?w=800"
                 alt="Chyler's story"
                 fill
                 className="object-cover rounded-lg"
