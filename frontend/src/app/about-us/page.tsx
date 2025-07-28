@@ -147,21 +147,32 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold mb-6">Made in Hawaii with Aloha</h2>
               <p className="text-lg mb-4">
                 We're proud to be certified by the Hawaii Department of Agriculture 
-                as "Made in Hawaii with Aloha" (MIHA). This certification represents 
-                our commitment to supporting local agriculture and economy.
+                as "Made in Hawaii with Aloha" (MIHA). This prestigious certification 
+                represents our commitment to supporting local agriculture and economy.
               </p>
-              <p className="text-lg mb-6">
+              <p className="text-lg mb-8">
                 Every batch is handcrafted in our Waipahu facility, where we combine 
                 traditional Hawaiian values with modern food production techniques to 
-                create a truly unique snack.
+                create a truly unique snack that embodies the spirit of our islands.
               </p>
-              <div className="relative h-24 w-48">
-                <Image
-                  src="https://chylers.com/cdn/shop/files/unnamed2.jpg"
-                  alt="Made in Hawaii with Aloha Certification"
-                  fill
-                  className="object-contain"
-                />
+              
+              <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-6">
+                <div className="flex flex-col sm:flex-row items-center gap-6">
+                  <Image
+                    src="https://chylers.com/cdn/shop/files/unnamed2.jpg"
+                    alt="Made in Hawaii with Aloha - Official Certification"
+                    width={200}
+                    height={80}
+                    className="h-24 w-auto"
+                  />
+                  <div className="text-center sm:text-left">
+                    <p className="font-semibold text-lg mb-1">Officially Certified</p>
+                    <p className="text-muted-foreground">
+                      Hawaii Department of Agriculture<br />
+                      Supporting local jobs and economy since 2004
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -221,6 +232,25 @@ export default function AboutPage() {
               <h3 className="font-semibold">Roasted Garlic</h3>
               <p className="text-sm text-muted-foreground">Award winning flavor</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Made in Hawaii Badge Callout */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-center gap-6 shadow-sm">
+            <Image
+              src="https://chylers.com/cdn/shop/files/unnamed2.jpg"
+              alt="Made in Hawaii with Aloha"
+              width={150}
+              height={60}
+              className="h-16 w-auto"
+            />
+            <p className="text-center md:text-left text-lg font-medium max-w-2xl">
+              Every flavor is certified Made in Hawaii with Aloha – your guarantee of 
+              authentic Hawaiian quality and our commitment to supporting local communities.
+            </p>
           </div>
         </div>
       </section>
