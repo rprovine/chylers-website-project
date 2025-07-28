@@ -42,8 +42,20 @@ export function Header() {
           <div className="container mx-auto px-4 py-2">
             <div className="flex items-center justify-between text-sm">
               <div className="hidden md:flex items-center space-x-4">
-                <span>📍 {BUSINESS_INFO.address}</span>
-                <span>📞 {BUSINESS_INFO.phone}</span>
+                <a 
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS_INFO.address)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline transition-all"
+                >
+                  📍 {BUSINESS_INFO.address}
+                </a>
+                <a 
+                  href={`tel:${BUSINESS_INFO.phone.replace(/\D/g, '')}`}
+                  className="hover:underline transition-all"
+                >
+                  📞 {BUSINESS_INFO.phone}
+                </a>
               </div>
               <div className="mx-auto md:mx-0">
                 <span className="font-semibold">🚚 Free Shipping on Orders Over $49!</span>
