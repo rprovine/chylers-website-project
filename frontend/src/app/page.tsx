@@ -232,28 +232,31 @@ export default function HomePage() {
                 different - a crispy, chip-like snack that had everyone saying 
                 <span className="font-semibold italic"> "It's not jerky, it's like a chip!"</span>
               </p>
-              <p className="text-lg mb-6">
+              <p className="text-lg mb-8">
                 Each batch is handcrafted in our Waipahu facility using 100% premium U.S. beef, 
                 our secret blend of spices, and a unique slow oven-roasting process that creates 
                 the perfect crispy texture.
               </p>
-              <div className="flex flex-col gap-6">
-                <Button asChild className="w-fit">
+              
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                <Button asChild size="lg">
                   <Link href="/about-us">
                     Read Our Full Story
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <div className="flex items-center gap-4">
+                
+                <div className="flex items-center gap-3 px-4 py-2 bg-white/50 rounded-lg">
                   <Image
                     src="https://chylers.com/cdn/shop/files/unnamed2.jpg"
-                    alt="Made in Hawaii with Aloha Certification"
-                    width={180}
-                    height={72}
-                    className="h-20 w-auto"
+                    alt="Made in Hawaii with Aloha"
+                    width={100}
+                    height={40}
+                    className="h-12 w-auto"
                   />
-                  <p className="text-sm text-muted-foreground max-w-xs">
-                    Proudly certified by the Hawaii Department of Agriculture
+                  <p className="text-sm font-medium text-muted-foreground">
+                    Proudly certified by the<br />
+                    Hawaii Department of Agriculture
                   </p>
                 </div>
               </div>
