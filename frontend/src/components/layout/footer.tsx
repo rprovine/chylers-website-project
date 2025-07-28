@@ -91,9 +91,22 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-8 pt-8 border-t">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Chyler's Hawaiian Beef Chips. All rights reserved.
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-4">
+              <p className="text-sm text-muted-foreground">
+                © {new Date().getFullYear()} Chyler's Hawaiian Beef Chips. All rights reserved.
+              </p>
+              <div className="flex items-center gap-4 text-sm">
+                {NAVIGATION.legal.map((item, index) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="text-muted-foreground hover:text-primary"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
             <div className="flex items-center space-x-2 mt-4 md:mt-0">
               <span className="text-sm text-muted-foreground">Made in Hawaii with Aloha 🌺</span>
             </div>

@@ -4,9 +4,9 @@ export const SITE_CONFIG = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://chylers.com',
   ogImage: '/og-image.jpg',
   links: {
-    facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://facebook.com/chylersbeefchips',
-    instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/chylersbeefchips',
-    tiktok: process.env.NEXT_PUBLIC_TIKTOK_URL || 'https://tiktok.com/@chylersbeefchips',
+    facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://www.facebook.com/chylers',
+    instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://www.instagram.com/chylers/',
+    tiktok: process.env.NEXT_PUBLIC_TIKTOK_URL || 'https://www.tiktok.com/@beefchips',
     amazon: process.env.NEXT_PUBLIC_AMAZON_STORE_URL || 'https://www.amazon.com/stores/chylers',
   },
 }
@@ -73,12 +73,17 @@ export const NAVIGATION = {
   customer: [
     { name: 'My Account', href: '/account' },
     { name: 'Order History', href: '/account/orders' },
-    { name: 'Shipping & Returns', href: '/pages/shipping-returns' },
+    { name: 'Shipping Policy', href: '/shipping-policy' },
+    { name: 'Returns/Refund Policy', href: '/returns-policy' },
   ],
   company: [
     { name: 'About Us', href: '/about-us' },
     { name: 'Contact', href: '/contact' },
     { name: 'Where to Buy', href: '/where-to-buy' },
+  ],
+  legal: [
+    { name: 'Privacy Policy', href: '/privacy-policy' },
+    { name: 'Terms of Service', href: '/terms-of-service' },
   ],
 }
 
