@@ -1,6 +1,8 @@
 import { Metadata } from 'next'
 import { ProductCard } from '@/components/products/product-card'
 import { productsApi } from '@/lib/api/client'
+import { PRODUCT_CONFIG } from '@/lib/constants'
+import { getProductImageByFlavor } from '@/lib/product-images'
 
 export const metadata: Metadata = {
   title: 'Shop Beef Chips',
@@ -13,8 +15,43 @@ async function getProducts() {
     return products
   } catch (error) {
     console.error('Failed to fetch products:', error)
-    // Return empty array if API fails
-    return []
+    // Return mock products with real images if API fails
+    return PRODUCT_CONFIG.flavors.map((flavor, index) => ({
+      id: String(index + 1),
+      title: `Chyler's ${flavor.name} Beef Chips`,
+      handle: `${flavor.slug}-beef-chips`,
+      vendor: "Chyler's Hawaiian Beef Chips",
+      product_type: 'Beef Chips',
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+      tags: [flavor.slug, flavor.badge?.toLowerCase().replace(' ', '-') || ''].filter(Boolean),
+      variants: [{
+        id: `${index + 1}-1`,
+        product_id: String(index + 1),
+        title: '1 Pack',
+        price: '13.99',
+        sku: `${flavor.id.toUpperCase()}-1`,
+        position: 1,
+        inventory_policy: 'deny',
+        option1: '1 Pack',
+        available: true,
+        requires_shipping: true,
+        taxable: true,
+        weight_unit: 'oz',
+      }],
+      images: [{
+        id: String(index + 1),
+        src: getProductImageByFlavor(flavor.slug),
+        alt: `${flavor.name} Beef Chips`,
+        position: 1,
+      }],
+      options: [],
+      flavor: flavor.name,
+      pack_sizes: ['1 Pack', '3 Pack', '6 Pack', '15 Pack'],
+      nutrition_info: PRODUCT_CONFIG.nutrition,
+      is_award_winning: flavor.badge === 'Award Winning',
+      is_bestseller: flavor.id === 'original',
+    }))
   }
 }
 

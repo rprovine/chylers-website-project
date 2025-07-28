@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { PRODUCT_IMAGES } from '@/lib/product-images'
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -14,7 +15,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1920"
+          src={PRODUCT_IMAGES.hero}
           alt="Hawaii landscape"
           fill
           className="object-cover"
@@ -54,7 +55,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="https://images.unsplash.com/photo-1609501676725-7186f017a4b7?w=800"
+                src={PRODUCT_IMAGES.varietyPack.primary}
                 alt="Family photo"
                 fill
                 className="object-cover rounded-lg"

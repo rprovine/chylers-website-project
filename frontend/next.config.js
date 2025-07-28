@@ -2,6 +2,13 @@
 const nextConfig = {
   images: {
     domains: ['cdn.shopify.com', 'localhost', 'chylers.com', 'images.unsplash.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'chylers.com',
+        pathname: '/cdn/shop/**',
+      },
+    ],
     formats: ['image/avif', 'image/webp'],
   },
   async headers() {

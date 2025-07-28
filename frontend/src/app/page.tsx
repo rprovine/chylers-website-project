@@ -4,6 +4,8 @@ import { Button } from '@/components/ui/button'
 import { ProductCard } from '@/components/products/product-card'
 import { productsApi } from '@/lib/api/client'
 import { ReviewsSection } from '@/components/reviews/reviews-section'
+import { PRODUCT_IMAGES, getProductImageByFlavor } from '@/lib/product-images'
+import { PRODUCT_CONFIG } from '@/lib/constants'
 import { ArrowRight, Truck, Clock, MapPin, Award } from 'lucide-react'
 
 async function getFeaturedProducts() {
@@ -12,8 +14,48 @@ async function getFeaturedProducts() {
     return products.slice(0, 2) // Show only 2 featured products
   } catch (error) {
     console.error('Failed to fetch featured products:', error)
-    // Return empty array if API fails
-    return []
+    // Return mock featured products with real images if API fails
+    const featuredFlavors = [
+      PRODUCT_CONFIG.flavors.find(f => f.id === 'original'),
+      PRODUCT_CONFIG.flavors.find(f => f.id === 'roasted-garlic')
+    ].filter(Boolean)
+    
+    return featuredFlavors.map((flavor, index) => ({
+      id: String(index + 1),
+      title: `Chyler's ${flavor!.name} Beef Chips`,
+      handle: `${flavor!.slug}-beef-chips`,
+      vendor: "Chyler's Hawaiian Beef Chips",
+      product_type: 'Beef Chips',
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+      tags: [flavor!.slug, flavor!.badge?.toLowerCase().replace(' ', '-') || ''].filter(Boolean),
+      variants: [{
+        id: `${index + 1}-1`,
+        product_id: String(index + 1),
+        title: '1 Pack',
+        price: '13.99',
+        sku: `${flavor!.id.toUpperCase()}-1`,
+        position: 1,
+        inventory_policy: 'deny',
+        option1: '1 Pack',
+        available: true,
+        requires_shipping: true,
+        taxable: true,
+        weight_unit: 'oz',
+      }],
+      images: [{
+        id: String(index + 1),
+        src: getProductImageByFlavor(flavor!.slug),
+        alt: `${flavor!.name} Beef Chips`,
+        position: 1,
+      }],
+      options: [],
+      flavor: flavor!.name,
+      pack_sizes: ['1 Pack', '3 Pack', '6 Pack', '15 Pack'],
+      nutrition_info: PRODUCT_CONFIG.nutrition,
+      is_award_winning: flavor!.badge === 'Award Winning',
+      is_bestseller: flavor!.id === 'original',
+    }))
   }
 }
 
@@ -26,7 +68,7 @@ export default async function HomePage() {
       <section className="relative h-[600px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1606914469633-bd39206ea739?w=1920"
+            src={PRODUCT_IMAGES.hero}
             alt="Hawaiian landscape"
             fill
             className="object-cover"
@@ -144,7 +186,7 @@ export default async function HomePage() {
             </div>
             <div className="relative h-[400px]">
               <Image
-                src="https://images.unsplash.com/photo-1613482184972-f9c1022d0928?w=800"
+                src={PRODUCT_IMAGES.collection}
                 alt="Chyler's story"
                 fill
                 className="object-cover rounded-lg"
