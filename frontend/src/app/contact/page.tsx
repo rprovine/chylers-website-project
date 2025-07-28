@@ -63,8 +63,12 @@ export default function ContactPage() {
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-          <p className="text-lg text-muted-foreground">
-            We'd love to hear from you! Send us a message or visit our facility in Kapolei.
+          <p className="text-lg text-muted-foreground max-w-3xl">
+            Whether you have questions about our products, need help with an order, or want to 
+            share your beef chip experience, we're here to help! Our ohana takes pride in providing 
+            exceptional customer service with the same care we put into making every batch of chips. 
+            Reach out through the form below, give us a call, or better yet – stop by our Waipahu 
+            facility to say aloha in person!
           </p>
         </div>
       </section>
@@ -214,10 +218,28 @@ export default function ContactPage() {
               </div>
 
               <div className="mt-8 p-6 bg-primary/10 rounded-lg">
-                <h3 className="font-semibold mb-2">Will Call Pickup Available</h3>
+                <h3 className="font-semibold mb-3">Will Call Pickup Available</h3>
+                <p className="text-sm mb-3">
+                  Save on shipping and experience the aloha spirit firsthand! Local customers can 
+                  pick up orders at our {BUSINESS_INFO.willCall.location} during business hours.
+                </p>
                 <p className="text-sm">
-                  Local customers can pick up orders at our {BUSINESS_INFO.willCall.location} during business hours.
-                  Select "Will Call" at checkout to save on shipping!
+                  <strong>Pro tip:</strong> Call ahead and we'll have your order ready when you arrive. 
+                  Many customers love touring our facility and meeting the team that makes their 
+                  favorite snacks!
+                </p>
+              </div>
+
+              <div className="mt-6 p-6 bg-gray-50 rounded-lg">
+                <h3 className="font-semibold mb-3">Wholesale & Partnership Inquiries</h3>
+                <p className="text-sm mb-3">
+                  Looking to carry Chyler's Hawaiian Beef Chips in your store or restaurant? 
+                  We'd love to partner with you! We offer competitive wholesale pricing, 
+                  marketing support, and flexible ordering options.
+                </p>
+                <p className="text-sm">
+                  <strong>Email:</strong> wholesale@chylers.com<br />
+                  <strong>Phone:</strong> {BUSINESS_INFO.phone} (ask for Wholesale Department)
                 </p>
               </div>
             </div>

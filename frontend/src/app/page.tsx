@@ -397,6 +397,67 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+          <div className="max-w-3xl mx-auto space-y-8">
+            <div>
+              <h3 className="text-xl font-semibold mb-3">What makes Chyler's different from beef jerky?</h3>
+              <p className="text-muted-foreground">
+                While beef jerky is chewy and tough, our beef chips are light, crispy, and crunchy – 
+                just like a potato chip! Our unique slow-roasting process creates a completely different 
+                texture that's easier to eat and more satisfying. Plus, with 18g of protein per serving, 
+                you're getting serious nutrition in every delicious bite. As we say, "It's not jerky, 
+                it's like a chip!"
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-3">How should I store my beef chips?</h3>
+              <p className="text-muted-foreground">
+                For maximum freshness and crunch, store your unopened bags in a cool, dry place. 
+                Once opened, we recommend enjoying them within 3-5 days (though most customers 
+                tell us a bag rarely lasts that long!). For extended freshness, you can transfer 
+                them to an airtight container. Avoid humid environments as moisture is the enemy 
+                of that perfect crispy texture.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Are your beef chips really keto-friendly?</h3>
+              <p className="text-muted-foreground">
+                Absolutely! With only 3g of carbs and zero sugar per serving, our beef chips are 
+                perfect for keto, paleo, and low-carb lifestyles. They're also naturally gluten-free 
+                with no fillers or artificial ingredients. Many of our customers are fitness enthusiasts 
+                and athletes who rely on our chips for clean, convenient protein that fits their macros.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Do you ship to the mainland United States?</h3>
+              <p className="text-muted-foreground">
+                Yes! We ship nationwide with free shipping on orders over $49. Orders typically arrive 
+                within 5-7 business days to the mainland. We also offer expedited shipping options for 
+                those who can't wait to taste the aloha. Hawaii residents can save on shipping with 
+                our Will-Call pickup option at our Waipahu facility.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Which flavor should I try first?</h3>
+              <p className="text-muted-foreground">
+                That's like asking us to pick a favorite child! Our Original flavor is perfect for 
+                purists who love the natural beef taste. Cracked Pepper adds a bold, peppery kick. 
+                Spicy brings the heat for adventurous snackers. And our award-winning Roasted Garlic 
+                is a fan favorite with its savory, aromatic flavor. Can't decide? Try our variety pack 
+                to sample all four!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
