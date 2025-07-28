@@ -51,7 +51,23 @@ export const useCartStore = create<CartState>()(
           const cartId = get().cartId
           if (cartId) {
             const response = await cartApi.get(cartId)
-            set({ cart: { items: response.items, subtotal: response.subtotal }, isLoading: false })
+            // Create a minimal cart object that satisfies the Cart interface
+            const cart: Cart = {
+              id: 0,
+              session_id: cartId,
+              items: response.items,
+              subtotal: response.subtotal,
+              total_amount: response.subtotal,
+              tax_amount: 0,
+              shipping_amount: 0,
+              discount_amount: 0,
+              discount_codes: [],
+              is_active: true,
+              created_at: new Date().toISOString(),
+              items_count: response.items.length,
+              is_free_shipping_eligible: response.subtotal >= 49
+            }
+            set({ cart, isLoading: false })
           }
         } catch (error) {
           console.error('Failed to fetch cart:', error)
