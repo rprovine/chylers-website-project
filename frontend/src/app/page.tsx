@@ -314,7 +314,7 @@ export default function HomePage() {
           <div className="grid grid-cols-3 md:grid-cols-3 gap-8 items-center max-w-3xl mx-auto">
             <div className="flex justify-center">
               <Image
-                src="https://cdn.shopify.com/s/files/1/0660/6130/4054/files/MIHF_logo.png"
+                src="https://chylers.com/cdn/shop/files/mihf-logo-bw.png?v=1724561775&width=550"
                 alt="MIHF Partner"
                 width={150}
                 height={80}
@@ -323,7 +323,7 @@ export default function HomePage() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="https://cdn.shopify.com/s/files/1/0660/6130/4054/files/SSE_Logo.png"
+                src="https://chylers.com/cdn/shop/files/SSE_Logo_FINAL-bw.png?v=1724562607&width=550"
                 alt="SSE Partner"
                 width={150}
                 height={80}
@@ -332,7 +332,7 @@ export default function HomePage() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="https://cdn.shopify.com/s/files/1/0660/6130/4054/files/MIH_logo.png"
+                src="https://chylers.com/cdn/shop/files/MIH-logo.jpg?v=1724562658&width=550"
                 alt="MIH Partner"
                 width={150}
                 height={80}

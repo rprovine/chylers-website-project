@@ -239,13 +239,13 @@ export default function AboutPage() {
       {/* Made in Hawaii Badge Callout */}
       <section className="py-8">
         <div className="container mx-auto px-4">
-          <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-center gap-6 shadow-sm">
+          <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-center gap-8 shadow-sm">
             <Image
               src="https://chylers.com/cdn/shop/files/unnamed2.jpg"
               alt="Made in Hawaii with Aloha"
-              width={150}
-              height={60}
-              className="h-16 w-auto"
+              width={220}
+              height={88}
+              className="h-24 w-auto flex-shrink-0"
             />
             <p className="text-center md:text-left text-lg font-medium max-w-2xl">
               Every flavor is certified Made in Hawaii with Aloha – your guarantee of 
