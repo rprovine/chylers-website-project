@@ -29,98 +29,149 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The Beginning */}
+      {/* Founders Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">A Happy Kitchen Accident</h2>
-            <p className="text-lg mb-4">
-              In 2004, what started as an accidental recipe mistake in our family kitchen 
-              turned into something extraordinary. While experimenting with traditional 
-              beef jerky recipes, we accidentally created something entirely different - 
-              a crispy, chip-like beef snack that was unlike anything else on the market.
-            </p>
-            <p className="text-lg mb-4">
-              The unique texture and incredible flavor were an instant hit with family 
-              and friends. We knew we had discovered something special, and Chyler's 
-              Hawaiian Beef Chips was born.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Meet Cal & Autumn</h2>
+              <p className="text-lg mb-4">
+                Believe it or not, Hawaiian Beef Chips® are all the result of an un-planned 
+                but very fortunate recipe mistake. In 2004, we were trying to make beef jerky 
+                to encourage our daughter to eat more protein, but what came out was something 
+                entirely different.
+              </p>
+              <p className="text-lg mb-4">
+                When our family tasted it, their reaction was unanimous: 
+                <span className="font-semibold italic"> "It's not jerky, it's like a chip!"</span> 
+                We knew we had discovered something special.
+              </p>
+              <p className="text-lg">
+                Named after our daughter Chyler (pronounced Shy-Ler), every bag of our 
+                Hawaiian Beef Chips carries that same spirit of family, love, and the 
+                aloha that makes Hawaii so special.
+              </p>
+            </div>
+            <div className="relative h-[400px]">
+              <Image
+                src="https://chylers.com/cdn/shop/files/chyler-3y3-circle.jpg"
+                alt="Cal, Autumn, and Chyler - Founders of Chyler's Hawaiian Beef Chips"
+                fill
+                className="object-cover rounded-full"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Why Chyler */}
+      {/* Divider */}
+      <div className="container mx-auto px-4">
+        <div className="relative h-16 flex items-center justify-center">
+          <Image
+            src="https://cdn.shopify.com/s/files/1/0660/6130/4054/files/divider.png"
+            alt="Decorative divider"
+            width={200}
+            height={20}
+            className="opacity-30"
+          />
+        </div>
+      </div>
+
+      {/* Production Process */}
       <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Handcrafted with Care</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <div className="relative h-48 mb-4 overflow-hidden rounded-lg">
+                <Image
+                  src="https://chylers.com/cdn/shop/files/apic1.png"
+                  alt="Premium U.S. Beef"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">100% Premium U.S. Beef</h3>
+              <p className="text-muted-foreground">
+                We start with only the finest cuts of 100% premium U.S. beef, 
+                carefully selected for quality and flavor.
+              </p>
+            </div>
+            <div>
+              <div className="relative h-48 mb-4 overflow-hidden rounded-lg">
+                <Image
+                  src="https://chylers.com/cdn/shop/files/spices1.jpg"
+                  alt="Secret Blend of Spices"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Secret Blend of Spices</h3>
+              <p className="text-muted-foreground">
+                Each flavor uses our proprietary blend of spices, perfected over 
+                years to create the perfect taste profile.
+              </p>
+            </div>
+            <div>
+              <div className="relative h-48 mb-4 overflow-hidden rounded-lg">
+                <Image
+                  src="https://chylers.com/cdn/shop/files/2.jpg"
+                  alt="Unique Chip Texture"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Slow Oven-Roasted</h3>
+              <p className="text-muted-foreground">
+                Our unique slow oven-roasting process creates that perfect crispy, 
+                chip-like texture that sets us apart.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hawaiian Heritage */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px]">
               <Image
-                src={PRODUCT_IMAGES.varietyPack.primary}
-                alt="Chyler's Beef Chips Variety Pack"
+                src="https://chylers.com/cdn/shop/files/1.jpg"
+                alt="Hawaiian Heritage"
                 fill
                 className="object-cover rounded-lg"
               />
             </div>
             <div>
-              <h2 className="text-3xl font-bold mb-6">Why "Chyler's"?</h2>
+              <h2 className="text-3xl font-bold mb-6">Made in Hawaii with Aloha</h2>
               <p className="text-lg mb-4">
-                We named our company after our daughter Chyler (pronounced Shy-Ler), 
-                who was our biggest inspiration and taste tester from day one. Her 
-                enthusiasm and joy for our beef chips reminded us why we started this 
-                journey - to share something we love with the people we care about.
+                We're proud to be certified by the Hawaii Department of Agriculture 
+                as "Made in Hawaii with Aloha" (MIHA). This certification represents 
+                our commitment to supporting local agriculture and economy.
               </p>
-              <p className="text-lg mb-4">
-                Every bag of Chyler's Hawaiian Beef Chips carries that same spirit of 
-                family, love, and the aloha that makes Hawaii so special.
+              <p className="text-lg mb-6">
+                Every batch is handcrafted in our Waipahu facility, where we combine 
+                traditional Hawaiian values with modern food production techniques to 
+                create a truly unique snack.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Values */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🌺</span>
+              <div className="relative h-24 w-48">
+                <Image
+                  src="https://chylers.com/cdn/shop/files/unnamed2.jpg"
+                  alt="Made in Hawaii with Aloha Certification"
+                  fill
+                  className="object-contain"
+                />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Made with Aloha</h3>
-              <p className="text-muted-foreground">
-                Every batch is crafted with the spirit of aloha - love, compassion, 
-                and respect for our customers and community.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🏝️</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Local Pride</h3>
-              <p className="text-muted-foreground">
-                Proudly made in Waipahu, Hawaii, supporting local jobs and contributing 
-                to our island economy.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">⭐</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Quality First</h3>
-              <p className="text-muted-foreground">
-                We never compromise on quality, using only premium ingredients to create 
-                the perfect crispy texture and flavor.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Product Gallery */}
-      <section className="py-16">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Product Line</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Four Amazing Flavors</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
@@ -174,6 +225,42 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Our Values */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Commitment</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">🥩</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Premium Quality</h3>
+              <p className="text-muted-foreground">
+                100% premium U.S. beef with no fillers, no preservatives, and no compromises.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">🌺</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Hawaiian Heritage</h3>
+              <p className="text-muted-foreground">
+                Proudly made in Hawaii with Aloha, supporting local jobs and our island community.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">👨‍👩‍👧</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Family Owned</h3>
+              <p className="text-muted-foreground">
+                A family business dedicated to sharing our accidental discovery with the world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Timeline */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -185,9 +272,10 @@ export default function AboutPage() {
                   2004
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">The Beginning</h3>
+                  <h3 className="text-xl font-semibold mb-2">The Happy Accident</h3>
                   <p className="text-muted-foreground">
-                    Accidental recipe discovery leads to the creation of Chyler's Hawaiian Beef Chips
+                    A failed attempt at making beef jerky for our daughter turns into the discovery 
+                    of Hawaiian Beef Chips. "It's not jerky, it's like a chip!"
                   </p>
                 </div>
               </div>
@@ -196,9 +284,10 @@ export default function AboutPage() {
                   2008
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Award Winner</h3>
+                  <h3 className="text-xl font-semibold mb-2">Award Recognition</h3>
                   <p className="text-muted-foreground">
-                    Our Roasted Garlic flavor wins its first award for taste and innovation
+                    Our Roasted Garlic flavor wins its first award, validating our unique approach 
+                    to beef chips.
                   </p>
                 </div>
               </div>
@@ -207,9 +296,10 @@ export default function AboutPage() {
                   2015
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Expansion</h3>
+                  <h3 className="text-xl font-semibold mb-2">Going National</h3>
                   <p className="text-muted-foreground">
-                    Launch online sales and expand to Amazon marketplace
+                    Launch of online sales and expansion to Amazon, bringing Hawaiian Beef Chips 
+                    to customers across the mainland.
                   </p>
                 </div>
               </div>
@@ -218,9 +308,10 @@ export default function AboutPage() {
                   Today
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Growing Strong</h3>
+                  <h3 className="text-xl font-semibold mb-2">Sharing Aloha Worldwide</h3>
                   <p className="text-muted-foreground">
-                    Continuing to share the taste of aloha with customers worldwide
+                    Continuing to handcraft every batch with the same care and quality that 
+                    started in our family kitchen.
                   </p>
                 </div>
               </div>

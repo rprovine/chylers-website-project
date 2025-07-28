@@ -200,25 +200,36 @@ export default async function HomePage() {
                 A Happy Accident Turned Family Legacy
               </h2>
               <p className="text-lg mb-4">
-                In 2004, what started as a kitchen mishap turned into Hawaii's favorite beef chip. 
-                Named after our daughter Chyler (pronounced Shy-Ler), our premium beef chips have 
-                been bringing the taste of aloha to snack lovers everywhere.
+                In 2004, Cal and Autumn were trying to make beef jerky to encourage their 
+                daughter Chyler to eat more protein. What came out was something entirely 
+                different - a crispy, chip-like snack that had everyone saying 
+                <span className="font-semibold italic"> "It's not jerky, it's like a chip!"</span>
               </p>
-              <p className="text-lg mb-6">
-                Each batch is carefully crafted in our Waipahu facility, using only the finest 
-                ingredients to create that perfect crispy texture that's "not jerky, it's like a chip!"
+              <p className="text-lg mb-4">
+                Each batch is handcrafted in our Waipahu facility using 100% premium U.S. beef, 
+                our secret blend of spices, and a unique slow oven-roasting process that creates 
+                the perfect crispy texture.
               </p>
-              <Button asChild>
-                <Link href="/about-us">
-                  Read Our Full Story
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+              <div className="flex items-center gap-6 mb-6">
+                <Button asChild>
+                  <Link href="/about-us">
+                    Read Our Full Story
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+                <Image
+                  src="https://chylers.com/cdn/shop/files/unnamed2.jpg"
+                  alt="Made in Hawaii with Aloha"
+                  width={100}
+                  height={40}
+                  className="h-12 w-auto"
+                />
+              </div>
             </div>
             <div className="relative h-[400px]">
               <Image
-                src={PRODUCT_IMAGES.varietyPack.primary}
-                alt="Chyler's Beef Chips Variety Pack - All Four Flavors"
+                src="https://chylers.com/cdn/shop/files/chyler-3y3-circle.jpg"
+                alt="Cal, Autumn, and Chyler - Founders of Chyler's Hawaiian Beef Chips"
                 fill
                 className="object-cover rounded-lg"
               />
