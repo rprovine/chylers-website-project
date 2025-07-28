@@ -205,25 +205,30 @@ export default async function HomePage() {
                 different - a crispy, chip-like snack that had everyone saying 
                 <span className="font-semibold italic"> "It's not jerky, it's like a chip!"</span>
               </p>
-              <p className="text-lg mb-4">
+              <p className="text-lg mb-6">
                 Each batch is handcrafted in our Waipahu facility using 100% premium U.S. beef, 
                 our secret blend of spices, and a unique slow oven-roasting process that creates 
                 the perfect crispy texture.
               </p>
-              <div className="flex items-center gap-6 mb-6">
-                <Button asChild>
+              <div className="flex flex-col gap-6">
+                <Button asChild className="w-fit">
                   <Link href="/about-us">
                     Read Our Full Story
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Image
-                  src="https://chylers.com/cdn/shop/files/unnamed2.jpg"
-                  alt="Made in Hawaii with Aloha"
-                  width={100}
-                  height={40}
-                  className="h-12 w-auto"
-                />
+                <div className="flex items-center gap-4">
+                  <Image
+                    src="https://chylers.com/cdn/shop/files/unnamed2.jpg"
+                    alt="Made in Hawaii with Aloha Certification"
+                    width={180}
+                    height={72}
+                    className="h-20 w-auto"
+                  />
+                  <p className="text-sm text-muted-foreground max-w-xs">
+                    Proudly certified by the Hawaii Department of Agriculture
+                  </p>
+                </div>
               </div>
             </div>
             <div className="relative h-[400px]">
@@ -233,6 +238,40 @@ export default async function HomePage() {
                 fill
                 className="object-cover rounded-lg"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Made in Hawaii Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="bg-primary/5 rounded-2xl p-8 md:p-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Certified Made in Hawaii with Aloha
+                </h2>
+                <p className="text-lg mb-4">
+                  We're proud to be officially certified by the Hawaii Department of Agriculture. 
+                  This certification represents our commitment to supporting local agriculture, 
+                  creating jobs in our community, and sharing the true spirit of aloha with every 
+                  bag of beef chips we make.
+                </p>
+                <p className="text-lg">
+                  When you choose Chyler's, you're not just getting a delicious snack – you're 
+                  supporting a local Hawaiian business that gives back to our island community.
+                </p>
+              </div>
+              <div className="flex justify-center">
+                <Image
+                  src="https://chylers.com/cdn/shop/files/unnamed2.jpg"
+                  alt="Made in Hawaii with Aloha - Official Certification"
+                  width={300}
+                  height={120}
+                  className="h-32 w-auto"
+                />
+              </div>
             </div>
           </div>
         </div>
