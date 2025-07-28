@@ -4,7 +4,6 @@
   "outputDirectory": "frontend/.next",
   "installCommand": "cd frontend && npm install",
   "devCommand": "cd frontend && npm run dev",
-  "root": "frontend",
   "env": {
     "NEXT_PUBLIC_API_URL": "https://api.chylers.com/api/v1",
     "NEXT_PUBLIC_SITE_URL": "https://chylers-website.vercel.app"
