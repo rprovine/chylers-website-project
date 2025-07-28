@@ -56,11 +56,15 @@ export function Header() {
         <div className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="relative h-10 w-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">C</span>
-              </div>
-              <span className="hidden sm:block font-bold text-xl">Chyler's</span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/chylers-logo.avif"
+                alt="Chyler's Hawaiian Beef Chips"
+                width={140}
+                height={50}
+                className="h-12 w-auto"
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}

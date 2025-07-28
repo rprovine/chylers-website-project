@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Facebook, Instagram } from 'lucide-react'
 import { NAVIGATION, BUSINESS_INFO, SITE_CONFIG } from '@/lib/constants'
 import { Button } from '@/components/ui/button'
@@ -10,7 +11,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Chyler's Hawaiian Beef Chips</h3>
+            <Link href="/" className="inline-block mb-4">
+              <Image
+                src="/chylers-logo.avif"
+                alt="Chyler's Hawaiian Beef Chips"
+                width={120}
+                height={43}
+                className="h-10 w-auto"
+              />
+            </Link>
             <p className="text-sm text-muted-foreground mb-4">
               Premium Hawaiian beef chips made with Aloha since 2004. It's not jerky, it's like a chip!
             </p>

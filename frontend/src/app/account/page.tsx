@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { User, Package, Heart, MapPin } from 'lucide-react'
@@ -19,6 +20,13 @@ export default function AccountPage() {
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-md mx-auto text-center">
+              <Image
+                src="/chylers-logo.avif"
+                alt="Chyler's Hawaiian Beef Chips"
+                width={180}
+                height={64}
+                className="h-16 w-auto mx-auto mb-8"
+              />
               <h1 className="text-3xl font-bold mb-4">Sign In to Your Account</h1>
               <p className="text-muted-foreground mb-8">
                 Access your order history, manage your addresses, and update your preferences.

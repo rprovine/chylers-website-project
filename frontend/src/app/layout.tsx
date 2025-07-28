@@ -61,9 +61,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.svg',
-    apple: '/apple-touch-icon.png',
+    icon: '/chylers-logo.avif',
+    shortcut: '/chylers-logo.avif',
+    apple: '/chylers-logo.avif',
   },
   manifest: '/site.webmanifest',
 }
