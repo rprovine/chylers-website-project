@@ -2,9 +2,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { ProductCard } from '@/components/products/product-card'
-import { TESTIMONIALS } from '@/lib/constants'
 import { productsApi } from '@/lib/api/client'
-import { ArrowRight, Star, Truck, Clock, MapPin, Award } from 'lucide-react'
+import { ReviewsSection } from '@/components/reviews/reviews-section'
+import { ArrowRight, Truck, Clock, MapPin, Award } from 'lucide-react'
 
 async function getFeaturedProducts() {
   try {
@@ -154,31 +154,8 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            What Our Customers Say
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {TESTIMONIALS.map((testimonial) => (
-              <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-sm border">
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-4">"{testimonial.content}"</p>
-                <div className="text-sm">
-                  <p className="font-semibold">{testimonial.author}</p>
-                  <p className="text-muted-foreground">{testimonial.location}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Reviews Section */}
+      <ReviewsSection />
 
       {/* CTA Section */}
       <section className="py-16 bg-primary text-white">

@@ -3,13 +3,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import { ShoppingCart, Eye } from 'lucide-react'
+import { ShoppingCart, Eye, Star } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Product } from '@/types'
 import { formatCurrency } from '@/lib/utils'
 import { useCartStore } from '@/store/cart'
 import { cn } from '@/lib/utils'
+import { REVIEW_SUMMARY } from '@/data/reviews'
 
 interface ProductCardProps {
   product: Product
@@ -107,6 +108,25 @@ export function ProductCard({ product, className }: ProductCardProps) {
             {product.flavor} Flavor
           </p>
         )}
+
+        {/* Review Rating */}
+        <div className="flex items-center gap-2 mb-2">
+          <div className="flex">
+            {[...Array(5)].map((_, i) => (
+              <Star
+                key={i}
+                className={`h-4 w-4 ${
+                  i < Math.round(REVIEW_SUMMARY.average)
+                    ? 'fill-yellow-400 text-yellow-400'
+                    : 'fill-gray-200 text-gray-200'
+                }`}
+              />
+            ))}
+          </div>
+          <span className="text-xs text-muted-foreground">
+            ({REVIEW_SUMMARY.total})
+          </span>
+        </div>
 
         <div className="flex items-center justify-between">
           <div>
