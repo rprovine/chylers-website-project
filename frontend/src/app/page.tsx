@@ -306,9 +306,9 @@ export default function HomePage() {
                 <Image
                   src="https://chylers.com/cdn/shop/files/unnamed2.jpg"
                   alt="Made in Hawaii with Aloha - Official Certification"
-                  width={300}
-                  height={120}
-                  className="h-32 w-auto"
+                  width={400}
+                  height={160}
+                  className="h-48 w-auto max-w-full"
                 />
               </div>
             </div>
