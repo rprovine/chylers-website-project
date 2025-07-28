@@ -205,7 +205,7 @@ export default async function HomePage() {
                 been bringing the taste of aloha to snack lovers everywhere.
               </p>
               <p className="text-lg mb-6">
-                Each batch is carefully crafted in our Kapolei facility, using only the finest 
+                Each batch is carefully crafted in our Waipahu facility, using only the finest 
                 ingredients to create that perfect crispy texture that's "not jerky, it's like a chip!"
               </p>
               <Button asChild>

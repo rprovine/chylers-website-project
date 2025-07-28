@@ -41,12 +41,12 @@ class Settings(BaseSettings):
     STANDARD_SHIPPING_RATE: float = 7.99
     EXPEDITED_SHIPPING_RATE: float = 15.99
     
-    BUSINESS_ADDRESS: str = "91-1085 Lexington Street, Kapolei, HI 96707"
+    BUSINESS_ADDRESS: str = "94-300 Farrington Hwy, #C03, Waipahu, HI 96797"
     BUSINESS_PHONE: str = "1-800-484-1663"
     BUSINESS_EMAIL: str = "BeefChips@chylers.com"
     BUSINESS_HOURS: str = "Monday-Friday, 8:00 AM to 5:00 PM Hawaii Time"
     
-    WILL_CALL_LOCATION: str = "Kapolei Kitchen Factory Outlet"
+    WILL_CALL_LOCATION: str = "Waipahu Factory Outlet"
     WILL_CALL_HOURS: str = "Monday-Friday, 8:00 AM to 5:00 PM Hawaii Time"
     
     AMAZON_STOREFRONT_URL: Optional[str] = None

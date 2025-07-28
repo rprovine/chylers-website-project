@@ -14,13 +14,13 @@ export const SITE_CONFIG = {
 export const BUSINESS_INFO = {
   phone: process.env.NEXT_PUBLIC_BUSINESS_PHONE || '1-800-484-1663',
   email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL || 'BeefChips@chylers.com',
-  address: process.env.NEXT_PUBLIC_BUSINESS_ADDRESS || '91-1085 Lexington Street, Kapolei, HI 96707',
+  address: process.env.NEXT_PUBLIC_BUSINESS_ADDRESS || '94-300 Farrington Hwy, #C03, Waipahu, HI 96797',
   hours: {
     weekdays: 'Monday-Friday, 8:00 AM to 5:00 PM Hawaii Time',
     weekends: 'Closed',
   },
   willCall: {
-    location: 'Kapolei Kitchen Factory Outlet',
+    location: 'Waipahu Factory Outlet',
     hours: 'Monday-Friday, 8:00 AM to 5:00 PM Hawaii Time',
   },
 }
@@ -126,7 +126,7 @@ export const FAQ = [
   },
   {
     question: "Can I pick up my order in person?",
-    answer: "Yes! Hawaii customers can choose Will Call pickup at our Kapolei Kitchen Factory Outlet during business hours (Monday-Friday, 8:00 AM to 5:00 PM Hawaii Time).",
+    answer: "Yes! Hawaii customers can choose Will Call pickup at our Waipahu Factory Outlet during business hours (Monday-Friday, 8:00 AM to 5:00 PM Hawaii Time).",
   },
   {
     question: "Where else can I buy your products?",

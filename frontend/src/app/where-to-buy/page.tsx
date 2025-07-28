@@ -9,7 +9,7 @@ import { PRODUCT_IMAGES } from '@/lib/product-images'
 
 export const metadata: Metadata = {
   title: 'Where to Buy',
-  description: 'Find Chyler\'s Hawaiian Beef Chips at our Kapolei location or online. Will-call pickup available.',
+  description: 'Find Chyler\'s Hawaiian Beef Chips at our Waipahu location or online. Will-call pickup available.',
 }
 
 export default function WhereToBuyPage() {
@@ -158,10 +158,28 @@ export default function WhereToBuyPage() {
           {/* Map Section */}
           <div className="mt-8">
             <h2 className="text-2xl font-bold mb-4">Find Us</h2>
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <p className="text-muted-foreground">
-                Interactive map would go here showing {BUSINESS_INFO.address}
-              </p>
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.049518961!2d-158.00919!3d21.394889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006e76e88f1311%3A0x5c7d8e7c7e7e7e7e!2s94-300%20Farrington%20Hwy%20%23C03%2C%20Waipahu%2C%20HI%2096797!5e0!3m2!1sen!2sus!4v1635959293851!5m2!1sen!2sus"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Chyler's Hawaiian Beef Chips Location"
+                className="w-full"
+              />
+            </div>
+            <div className="mt-4 text-center">
+              <a
+                href="https://www.google.com/maps/place/94-300+Farrington+Hwy+%23C03,+Waipahu,+HI+96797"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                Get Directions on Google Maps
+              </a>
             </div>
           </div>
 

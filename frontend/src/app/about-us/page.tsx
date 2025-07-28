@@ -99,7 +99,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Local Pride</h3>
               <p className="text-muted-foreground">
-                Proudly made in Kapolei, Hawaii, supporting local jobs and contributing 
+                Proudly made in Waipahu, Hawaii, supporting local jobs and contributing 
                 to our island economy.
               </p>
             </div>
